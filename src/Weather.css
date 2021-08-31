@@ -1,6 +1,7 @@
 .Weather {
+  background: #eaf6f6;
   border: 1px solid #dadde1;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Dosis', sans-serif;
   color: #938b87;
   padding:16px;
 border-radius: 4px;
@@ -9,7 +10,7 @@ border-radius: 4px;
 .Weather h1 {
    margin: 20px 0 0 0 ;
   font-size: 24px;
-  font-weight: 400px;
+  font-weight: bold;
   line-height: 29px;
 }
 .Weather form {
@@ -35,6 +36,7 @@ border-radius: 4px;
     font-weight: 400;
     font-size: 50px;    
     color: rgb( 33,33, 33);
+    font-weight: bold;
  
 }
 
