@@ -16,6 +16,7 @@ export default function Weather() {
           </div>
           <div className="col-3">
             <input type="submit" value="Search" className="btn btn-info " />
+           
           </div>
         </div>
       </form>
@@ -31,7 +32,6 @@ export default function Weather() {
           <img
             src="https://cdn3.iconfinder.com/data/icons/lucid-weather/24/sun_hot_brightness_sunny_star-512.png"
             alt="sunny"
-            
           />{" "}
           <span className="temperature">16</span>{" "}
           <span className="celsius">°C</span>{" "}
