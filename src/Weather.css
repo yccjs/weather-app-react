@@ -40,10 +40,11 @@ border-radius: 4px;
  
 }
 
-.Weather img {
+.Weather canvas {
     height: 64px;
+    width: 64;
     display: inline-block;
-    margin: 0px;
+    margin: 0;
 }
  .celsius ,  .fahrenheit , .division{
     position: relative;
