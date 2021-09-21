@@ -4,6 +4,7 @@ import WeatherIcon from "./WeatherIcon";
 export default function WeatherForecastDay(props) {
   function maxTemp() {
     let temperature = Math.round(props.data.temp.max);
+    console.log(props.data);
     return `${temperature}`;
   }
 
