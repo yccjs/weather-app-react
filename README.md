@@ -1,5 +1,7 @@
 ## About the app
 
+![image](https://user-images.githubusercontent.com/84162315/173298244-924125c2-b986-46c3-8f97-af60fe2cc2ce.png)
+
 This app is the very first app that I built! This is a weather app made with Node, React and openweatherAPI, that allows users to search for the weather of cities all over the world. 
 
 
