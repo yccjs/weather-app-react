@@ -4,6 +4,10 @@
 
 This app is the very first app that I built! This is a weather app made with Node, React and openweatherAPI, that allows users to search for the weather of cities all over the world. 
 
+## Features
+- Weather look up for any city
+- Weekly Forecast
+- Convert temperature from celsius to fahrenheit and vice-versa
 
 ## Project Link
 https://confident-spence-43cc16.netlify.app/
