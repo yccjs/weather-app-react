@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Weather.css";
+import "../styles/Weather.css";
 import axios from "axios";
 import WeatherInformation from "./WeatherInformation";
 import WeatherForecast from "./WeatherForecast";
@@ -8,6 +8,7 @@ export default function Weather(props) {
   const [loaded, setLoaded] = useState(false);
   const [weatherInfo, setWeatherInfo] = useState({});
   const [city, setCity] = useState(props.defaultCity);
+
   function handleResponse(response) {
     setWeatherInfo({
       temperature: response.data.main.temp,
@@ -17,12 +18,13 @@ export default function Weather(props) {
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
       high: response.data.main.temp_max,
-      coordinates:response.data.coord,
+      coordinates: response.data.coord,
       low: response.data.main.temp_min,
       date: new Date(response.data.dt * 1000),
     });
     setLoaded(true);
   }
+
   function search() {
     const apiKey = "dec74aa3cca603388c8175de57e5d65a";
 
@@ -38,6 +40,7 @@ export default function Weather(props) {
   function handleCity(event) {
     setCity(event.target.value);
   }
+
   if (loaded) {
     return (
       <div className="Weather">
@@ -53,16 +56,20 @@ export default function Weather(props) {
               />
             </div>
             <div className="col-3">
-              <input type="submit" value="Search" className="btn btn-info  w-100"/>
+              <input
+                type="submit"
+                value="Search"
+                className="btn btn-info  w-100"
+              />
             </div>
           </div>
         </form>
         <WeatherInformation data={weatherInfo} />
-        <WeatherForecast coordinates={weatherInfo.coordinates}/>
+        <WeatherForecast coordinates={weatherInfo.coordinates} />
       </div>
     );
   } else {
-    search ();
+    search();
     return "Loading....";
   }
 }
